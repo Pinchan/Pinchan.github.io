@@ -1,0 +1,76 @@
+h1{
+color:green;
+font-size:250%;
+/*Google　Fontsの特殊ﾌｫﾝﾄ利用*/
+font-family: "Nico Moji";
+}
+
+h1::after{
+  content:"";
+  display: block;
+}
+
+.select{
+color:red;
+font-size:200%
+}
+
+/*ｲﾒｰｼﾞの大きさ*/
+p img{
+padding: 0px;
+width:700px;
+height: 400px;
+
+}
+
+/*div範囲の中央化*/
+div{
+  width:650px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/*文字のｾﾝﾀｰ*/
+h1,h2,h3,li{
+  text-align:center;
+}
+
+/*段落記号を無くす*/
+li{
+  list-style: none;
+/*段落を横並び ８ｺﾏで４ｺﾏ２列にする*/
+  width:25%;
+/*左に寄せる*/
+  float:left;
+}
+
+/*ﾘｽﾄの背景を変更*/
+li{
+  background-color:#c2e08f;
+/*背景に影を取り付け*/
+  box-shadow: 0 0 10px 0 #ccc;
+}
+
+/*float要素でのﾊﾞｸﾞ防止措置
+今回はli要素の親であるul要素が対象となる*/
+ul:after{
+  content:"";
+  display: block;
+  /*  display: block;は表示形式
+  h1やｐ等の段落系はblokレベルで
+  ａやｅｍ等の横記載はｲﾝﾗｲﾝとなる
+  上記の場合は空欄箇所がﾌﾟﾛｯｸとなる*/
+  clear:both;
+  /*clearはfloatの影響を解消bothはfloatの
+  左右の回り込みの影響の解消*/
+  }
+
+/*header　上部に緑の実線を書く
+  soldは実線*/
+header{
+  border-top:solid 10px #c2e08f;
+}
+
+li{
+  background-color:#c2e08f;
+}
