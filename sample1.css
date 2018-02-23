@@ -1,0 +1,29 @@
+@media print{
+  .print_button{ display: none; }
+}
+
+/*外枠を消す*/
+@media print{
+  input{ border:none; }
+}
+/*この・・・枠*/
+@media print{
+  textarea{ border:none; }
+}
+
+@media print{
+  select {
+    border:none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+  ::-ms-expand {
+    display: none;
+  }
+}
+
+input [type="text"]:focus {
+  border: 2px solid #ff9900;
+  outline: 0;
+}
